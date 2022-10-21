@@ -67,6 +67,8 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
+  <script src="phaser.min.js"></script>
+    <script src="catch-the-cat.js"></script>
   
 
   
@@ -87,7 +89,12 @@
   
 
   
-
+  <style>
+    #catch-the-cat {
+        display: flex;
+        justify-content: center;
+    }
+</style>
   
 
 
@@ -218,7 +225,20 @@
     </div>
   </div>
 </div>
-
+<div class="container">
+        <div id="catch-the-cat"></div>
+        <script>
+            window.game = new CatchTheCatGame({
+                w: 11,
+                h: 11,
+                r: 20,
+                backgroundColor: 0xeeeeee,
+                parent: 'catch-the-cat',
+                statusBarAlign: 'center',
+                credit: 'Your name...'
+            });
+        </script>
+    </div>
 </div>
 
   </header>
@@ -227,15 +247,7 @@
     
       
 
-<script>
-  function redirect() {
-    location.href = "/";
-  }
 
-  
-    setTimeout(redirect, 5000)
-  
-</script>
 
     
 
