@@ -231,7 +231,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="念念不忘，必有回响。绵绵不绝，遂相印于心。"></span>
+            <span id="subtitle"><a href="#" id="hitokoto_text">:D 获取中...</a></span>
           
         </div>
 
@@ -250,7 +250,16 @@
 </div>
 
   </header>
-
+<script>
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.getElementById('hitokoto_text')
+      hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+      hitokoto.innerText = data.hitokoto
+    })
+    .catch(console.error)
+</script>
   <main>
     
       <div class="container nopadding-x-md">
