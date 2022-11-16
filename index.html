@@ -106,7 +106,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>FYu.Xiao</strong>
+      <strong>Yu.Xiao</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -224,13 +224,14 @@
 
   
 
-<div id="banner" class="banner" parallax=true style="background: url('https://static.dingtalk.com/media/lQDPJxa81t6SqOnNA8DNBQCwHHUZjntJdUgDNnXuToDRAA_1280_960.jpg?auth_bizType=IM&auth_bizEntity=%7B%22cid%22%3A%22780182797%3A780182797%22%2C%22msgId%22%3A%2212603680609236%22%7D&bizType=im&open_id=780182797') no-repeat center center; background-size: cover;">
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://static.dingtalk.com/media/lQDPJxa81t6SqOnNA8DNBQCwHHUZjntJdUgDNnXuToDRAA_1280_960.jpg?auth_bizType=IM&auth_bizEntity=%7B%22cid%22%3A%22780182797%3A780182797%22%2C%22msgId%22%3A%2212603680609236%22%7D&bizType=im&open_id=780182797') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.4)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle"><a href="#" id="1">:D 获取中...</a></span>
+            <span id="subtitle" data-typed-text="念念不忘，必有回响。绵绵不绝，遂相印于心。"></span>
           
         </div>
 
@@ -249,16 +250,7 @@
 </div>
 
   </header>
-<script>
-  fetch('https://v1.hitokoto.cn')
-    .then(response => response.json())
-    .then(data => {
-      const hitokoto = document.getElementById('1')
-      hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-      hitokoto.innerText = data.hitokoto
-    })
-    .catch(console.error)
-</script>
+
   <main>
     
       <div class="container nopadding-x-md">
